@@ -11,6 +11,8 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import logo from "../../Assets/Eagle.png";
 import "./NavBars.css";
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+
 const NavBars = () => {
   return (
     <Navbar expand="lg">
