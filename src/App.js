@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import "./App.css";
+import Footer from "./Component/Footer/Footer";
 import NavBars from "./Component/NavBar/NavBars";
 import Home from "./Page/Home/Home";
 
@@ -8,6 +9,7 @@ function App() {
     <Fragment>
       <NavBars />
       <Home />
+      <Footer />
     </Fragment>
   );
 }
