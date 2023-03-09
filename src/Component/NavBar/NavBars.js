@@ -1,5 +1,5 @@
 import {
-  faContactBook,
+  faArrowLeft,
   faMobileAlt,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
 import logo from "../../Assets/Eagle.png";
 import "./NavBars.css";
 
@@ -22,7 +23,9 @@ const NavBars = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className="active">Home</Nav.Link>
+            <Link to="/home" className="active">
+              Home
+            </Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="!#">Hosting</NavDropdown.Item>
               <NavDropdown.Item href="!#">Frontend</NavDropdown.Item>
@@ -40,8 +43,8 @@ const NavBars = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link>About</Nav.Link>
-            <Nav.Link>Contact</Nav.Link>
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
             <Nav.Link>
               <FontAwesomeIcon icon={faSearch} />
             </Nav.Link>
@@ -51,7 +54,7 @@ const NavBars = () => {
             <Nav.Link>
               <button id="btnheader">
                 Contact Us
-                <FontAwesomeIcon icon={faContactBook} />
+                <FontAwesomeIcon icon={faArrowLeft} />
               </button>
             </Nav.Link>
           </Nav>

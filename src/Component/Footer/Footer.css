@@ -49,6 +49,7 @@ footer h2 {
 
 footer form {
   margin: 15px 0;
+  background-color: black;
 }
 footer form input {
   border: 1px solid #fff;
@@ -68,14 +69,13 @@ footer .social svg {
 }
 footer .footer-buttom {
   text-align: center;
-  margin-top: 25px ;
+  margin-top: 25px;
   padding: 15px 0;
   color: var(--footerp-color);
   font-weight: bolder;
-  border-top: 1px solid var(--footerp-color) ;
+  border-top: 1px solid var(--footerp-color);
 }
 footer .footer-buttom span {
   display: block;
   margin-top: 10px;
 }
-
