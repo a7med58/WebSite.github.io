@@ -1,7 +1,5 @@
 import { Fragment } from "react";
-import About from "../../Page/About/About";
-import Contact from "../../Page/Contact/Contact";
-import Home from "../../Page/Home/Home";
+import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import NavBars from "../NavBar/NavBars";
 
@@ -10,9 +8,7 @@ const LayOut = () => {
     <Fragment>
       <NavBars />
       <main>
-        <Home />
-        <About />
-        <Contact />
+        <Outlet />
       </main>
       <Footer />
     </Fragment>
