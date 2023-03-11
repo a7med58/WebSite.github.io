@@ -79,15 +79,14 @@ nav .navbar-nav button span {
   color: var(--main-color);
 }
 
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
+[type="button"]:not(:disabled) {
   background-color: var(--main-color);
-  position: fixed;
+  position: relative;
   cursor: pointer;
   border: 1px solid var(--main-color);
-  border-radius: 0;
+  border-radius: 5;
   margin-left: 75%;
+  margin-top: -60px;
 }
 nav svg {
   margin: 2px;
