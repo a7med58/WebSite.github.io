@@ -52,7 +52,7 @@
   margin-right: 10px;
 }
 form {
-  background-color: #fff;
+  background-color: #fff !important;
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -60,7 +60,7 @@ form {
   padding: 15px;
 }
 form .form-control {
-  border: none;
+  border-radius: 10px;
 }
 form input,
 form textarea,
@@ -98,7 +98,7 @@ form button {
 }
 form button:hover {
   background-color: transparent !important;
-  color: var(--footerp-color);
+  color: var(--seconde-color);
   transition: 0.3s ease-in-out;
 }
 form p {

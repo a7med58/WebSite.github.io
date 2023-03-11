@@ -47,9 +47,9 @@ footer h2 {
   font-weight: bolder;
 }
 
-footer form {
+.form-footer {
   margin: 15px 0;
-  background-color: black;
+  background-color: black !important;
 }
 footer form input {
   border: 1px solid #fff;

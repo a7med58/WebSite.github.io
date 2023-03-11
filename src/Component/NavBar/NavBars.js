@@ -28,12 +28,20 @@ const NavBars = () => {
             <Link to="/home" className="active">
               Home
             </Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
+            <NavDropdown
+              title="Services"
+              id="basic-nav-dropdown"
+              className="nav-link-m"
+            >
               <NavDropdown.Item href="!#">Hosting</NavDropdown.Item>
               <NavDropdown.Item href="!#">Frontend</NavDropdown.Item>
               <NavDropdown.Item href="!#">Backend</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="My Work" id="basic-nav-dropdown">
+            <NavDropdown
+              title="My Work"
+              id="basic-nav-dropdown"
+              className="nav-link-m"
+            >
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
@@ -45,8 +53,12 @@ const NavBars = () => {
               </NavDropdown.Item>
             </NavDropdown>
 
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/about" className="nav-link-m">
+              About
+            </Link>
+            <Link to="/contact" className="nav-link-m">
+              Contact
+            </Link>
             <Link to="/login">
               <FontAwesomeIcon icon={faSignInAlt} />
             </Link>

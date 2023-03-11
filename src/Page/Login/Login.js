@@ -32,9 +32,12 @@ const Login = () => {
 
         <div className="row">
           <div className="col-md-12 col-lg-12">
-            <Form onSubmit={handleSubmit}>
-              <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+            <Form onSubmit={handleSubmit} className="loginform">
+              <Form.Group
+                controlId="formBasicEmail"
+                className="form-group-login"
+              >
+                <Form.Label className="label-login">Email address</Form.Label>
                 <Form.Control
                   type="email"
                   placeholder="Enter email"
@@ -44,8 +47,11 @@ const Login = () => {
                 />
               </Form.Group>
 
-              <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
+              <Form.Group
+                controlId="formBasicPassword"
+                className="form-group-login"
+              >
+                <Form.Label className="label-login">Password</Form.Label>
                 <Form.Control
                   type="password"
                   placeholder="Password"

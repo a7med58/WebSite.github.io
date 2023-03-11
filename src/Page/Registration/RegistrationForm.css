@@ -6,3 +6,22 @@
   line-height: 80px;
   text-align: center;
 }
+/* Center the form on the page */
+.regform {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--footerp-color) !important;
+}
+.form-group-reg {
+  margin-bottom: 20px;
+}
+
+.label-reg {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}

@@ -94,3 +94,7 @@ nav svg {
   font-size: 25px;
   color: var(--seconde-color);
 }
+.nav-link-m {
+  color: black;
+  font-weight: bold;
+}

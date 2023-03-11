@@ -24,9 +24,9 @@ const RegistrationForm = () => {
   return (
     <Container>
       <h2 className="h2reg">Register</h2>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
-          <Form.Label>Name</Form.Label>
+      <Form onSubmit={handleSubmit} className="regform">
+        <Form.Group className="form-group-reg ">
+          <Form.Label className="label-reg">Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Enter name"
@@ -36,8 +36,8 @@ const RegistrationForm = () => {
           />
         </Form.Group>
 
-        <Form.Group>
-          <Form.Label>Email address</Form.Label>
+        <Form.Group className="form-group-reg ">
+          <Form.Label className="label-reg">Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Enter email"
@@ -47,8 +47,8 @@ const RegistrationForm = () => {
           />
         </Form.Group>
 
-        <Form.Group>
-          <Form.Label>Password</Form.Label>
+        <Form.Group className="form-group-reg ">
+          <Form.Label className="label-reg">Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Password"
