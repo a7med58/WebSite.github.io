@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import axios from "axios";
-import "./AddPost.css"
+import React, { useState } from "react";
+import "./AddPost.css";
 const AddPost = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -26,7 +26,7 @@ const AddPost = () => {
       <h2 className="h2-addpost">Add a new article</h2>
       <form onSubmit={handleSubmit} className="post-form">
         <div className="form-group-post">
-          <label className="label-addpost" htmlFor="title">
+          <label className="label-addpost" htmlFor="title" placeholder="Title">
             Title
           </label>
           <input
@@ -35,6 +35,7 @@ const AddPost = () => {
             id="title"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            placeholder="Title"
           />
         </div>
         <div className="form-group-post">
@@ -47,6 +48,7 @@ const AddPost = () => {
             rows="5"
             value={content}
             onChange={(e) => setContent(e.target.value)}
+            placeholder="Post Contant"
           ></textarea>
         </div>
         <button type="submit" className="btn-add">

@@ -26,7 +26,7 @@ const FormContact = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="contactform">
       <div className="form-control">
         <input
           placeholder="Your Name"
