@@ -26,48 +26,43 @@ const Login = () => {
       });
   };
   return (
-    <section className="login">
-      <div className="container">
-        <h2 className="h2login">Login</h2>
+    <div className="container">
+      <h2 className="h2login">Login</h2>
 
-        <div className="row">
-          <div className="col-md-12 col-lg-12">
-            <Form onSubmit={handleSubmit} className="loginform">
-              <Form.Group
-                controlId="formBasicEmail"
-                className="form-group-login"
-              >
-                <Form.Label className="label-login">Email address</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="Enter email"
-                  name="email"
-                  value={credentials.email}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
+      <div className="row">
+        <div className="col-md-12 col-lg-12">
+          <Form onSubmit={handleSubmit} className="loginform">
+            <Form.Group controlId="formBasicEmail" className="form-group-login">
+              <Form.Label className="label-login">Email address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="Enter email"
+                name="email"
+                value={credentials.email}
+                onChange={handleInputChange}
+              />
+            </Form.Group>
 
-              <Form.Group
-                controlId="formBasicPassword"
-                className="form-group-login"
-              >
-                <Form.Label className="label-login">Password</Form.Label>
-                <Form.Control
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={credentials.password}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Button className="btn" variant="primary" type="submit">
-                Submit
-              </Button>
-            </Form>
-          </div>
+            <Form.Group
+              controlId="formBasicPassword"
+              className="form-group-login"
+            >
+              <Form.Label className="label-login">Password</Form.Label>
+              <Form.Control
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={credentials.password}
+                onChange={handleInputChange}
+              />
+            </Form.Group>
+            <Button className="btn" type="submit">
+              Submit
+            </Button>
+          </Form>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

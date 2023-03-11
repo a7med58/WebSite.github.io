@@ -24,8 +24,8 @@ const AddPost = () => {
   return (
     <div className="container">
       <h2 className="h2-addpost">Add a new article</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
+      <form onSubmit={handleSubmit} className="post-form">
+        <div className="form-group-post">
           <label className="label-addpost" htmlFor="title">
             Title
           </label>
@@ -37,7 +37,7 @@ const AddPost = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div className="form-group">
+        <div className="form-group-post">
           <label className="label-addpost" htmlFor="content">
             Content
           </label>
