@@ -4,6 +4,7 @@ import {
   faSearch,
   faSignInAlt,
   faUserPlus,
+  faUsersBetweenLines,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -62,8 +63,12 @@ const NavBars = () => {
             <Link to="/login">
               <FontAwesomeIcon icon={faSignInAlt} />
             </Link>
+
             <Link to="/registration">
               <FontAwesomeIcon icon={faUserPlus} />
+            </Link>
+            <Link to="/userpanel">
+              <FontAwesomeIcon icon={faUsersBetweenLines} />
             </Link>
             <Nav.Link>
               <FontAwesomeIcon icon={faSearch} />

@@ -1,0 +1,22 @@
+.h3-viewposts {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  line-height: 50px;
+}
+.h3-viewposts {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  line-height: 30px;
+}
+.h2-viewposts {
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: black;
+  line-height: 80px;
+  text-align: center;
+}
