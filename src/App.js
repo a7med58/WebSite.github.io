@@ -14,6 +14,7 @@ import Login from "./Page/Login/Login";
 import RegistrationForm from "./Page/Registration/RegistrationForm";
 import AddPost from "./Page/UserPanel/AddPost";
 import UserPanel from "./Page/UserPanel/UserPanel";
+import ViewPost from "./Page/UserPanel/ViewPost";
 import ViewPosts from "./Page/UserPanel/ViewPosts";
 
 const routes = createBrowserRouter(
@@ -27,6 +28,8 @@ const routes = createBrowserRouter(
       <Route path="/about" element={<About />} />
       <Route path="/addpost" element={<AddPost />} />
       <Route path="/viewposts" element={<ViewPosts />} />
+      <Route path="/posts/:id" element={<ViewPost />} />
+      <Route path="/posts/:id/edit" element={<ViewPost />} />
     </Route>
   )
 );

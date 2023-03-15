@@ -1,16 +1,17 @@
+.posts-box {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--footerp-color) !important;
+}
 .h3-viewposts {
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #333;
   line-height: 50px;
-}
-.h3-viewposts {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-  line-height: 30px;
 }
 .h2-viewposts {
   font-size: 60px;
@@ -19,4 +20,36 @@
   color: black;
   line-height: 80px;
   text-align: center;
+}
+.icon-viewposts {
+  justify-content: center;
+}
+.viewposts svg {
+  color: var(--btn-color);
+  padding: 20px;
+  margin-right: 80px;
+  display: inline-block;
+}
+.viewposts a {
+  color: black;
+  padding: 20px;
+  font-weight: bold;
+}
+.viewposts li {
+  display: inline-block;
+  padding: 5px;
+}
+.pagination {
+  justify-content: center;
+  margin: 5px 0px;
+}
+button {
+  color: var(--footerbg-color);
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid blue;
+  margin-right: 5px;
+  border-radius: 50px;
+  background-color: var(--footerp-color);
+  font-weight: bold;
 }
