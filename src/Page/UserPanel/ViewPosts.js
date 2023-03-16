@@ -54,6 +54,11 @@ const ViewPosts = ({ isLoggedIn }) => {
   return (
     <div className="container viewposts">
       <h2 className="h2-viewposts ">All Posts</h2>
+
+      <h3 className="h2-count-posts ">
+        Count Of Posts<span className="count-posts">({posts.length})</span>
+      </h3>
+
       {authenticated ? (
         <ul>
           {visiblePosts.map((post) => (
@@ -78,6 +83,8 @@ const ViewPosts = ({ isLoggedIn }) => {
             </div>
           ))}
           <div className="pagination">
+            {" "}
+            <h4>Page</h4>
             {Array.from({ length: totalPages }, (_, i) => (
               <button
                 key={i + 1}
